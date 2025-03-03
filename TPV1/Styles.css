@@ -1,0 +1,749 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+
+.dropbtn {
+  background-color: #002244;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #1E90FF;
+}
+
+/* For Video Section */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+.video-container iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dolphins Page Specific Styles */
+.dolphins-page .dropbtn,
+.dolphins-page .dropdown-content {
+  background-color: #008e97; /* Dolphins teal */
+}
+
+/* Bills Page Specific Styles */
+.bills-page .dropbtn,
+.bills-page .dropdown-content {
+  background-color: #00338D; /* Bills blue */
+}
+
+/* Patriots Page Specific Styles */
+.patriots-page .dropbtn,
+.patriots-page .dropdown-content {
+  background-color: red; /* Patriots red */
+}
+
+/* Jets Page Specific Styles */
+.jets-page .dropbtn,
+.jets-page .dropdown-content {
+  background-color: #125740; /* Jets green */
+}
+
+/* Hero Images */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-container img {
+  width: 48%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #002244;
+}
+
+/* Home Footer */
+.index-footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Current and Historic Statistics Page */
+.Stats-and-History header {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.Stats-and-History nav {
+  margin-top: 10px;
+}
+
+.Stats-and-History nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.Stats-and-History nav a:hover {
+  text-decoration: underline;
+}
+
+.Stats-and-History .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.Stats-and-History .dropbtn {
+  background-color: #002244;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.Stats-and-History .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #002244;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.Stats-and-History .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Stats-and-History .dropdown-content a:hover {
+  background-color: #1E90FF;
+}
+
+.Stats-and-History .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Stats-and-History .dropdown:hover .dropbtn {
+  background-color: #1E90FF;
+}
+
+.Stats-and-History section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Stats-and-History h2 {
+  color: #002244;
+}
+
+.Stats-and-History table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.Stats-and-History th, .Stats-and-History td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.Stats-and-History th {
+  background-color: #002244;
+  color: white;
+}
+
+.Stats-and-History tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.Stats-and-History tr:hover {
+  background-color: #f1f1f1;
+}
+
+.Stats-and-History .stats-footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Specific Styles for Contact Page */
+/* ----------------------------------------------- */
+.contact-page header {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-page nav {
+  margin-top: 10px;
+}
+
+.contact-page nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-page nav a:hover {
+  text-decoration: underline;
+}
+
+.contact-page .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.contact-page .dropbtn {
+  background-color: #002244;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-page .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #002244;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.contact-page .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contact-page .dropdown-content a:hover {
+  background-color: #1E90FF;
+}
+
+.contact-page .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.contact-page .dropdown:hover .dropbtn {
+  background-color: #1E90FF;
+}
+
+.contact-page section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h2 {
+  color: #002244;
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page textarea,
+.contact-page select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-page input[type="radio"],
+.contact-page input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.contact-page button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #002244;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-page button:hover {
+  background-color: #1E90FF;
+}
+
+.contact-page fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.contact-page legend {
+  font-weight: bold;
+}
+
+.contact-page .contact-footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Dolphins Page Specific Styles */
+.dolphins-header {
+  background-color: #008e97; /* Dolphins teal */
+}
+
+.dolphins-h2 {
+  color: #008e97; /* Dolphins teal */
+}
+
+/* Team Leaders */
+.leaders-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.leader {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  flex: 1 1 calc(20% - 20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed; /* Ensures the table fits within the container */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word; /* Ensures text wraps within the cells */
+}
+
+th {
+  background-color: #008e97; /* Dolphins teal */
+  color: white;
+  font-size: 14px;
+}
+
+td {
+  font-size: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Gallery Section */
+#additional-images {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: calc(50% - 20px);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #008e97; /* Dolphins teal */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Bills Page Specific Styles */
+.bills-header {
+  background-color: #00338D; /* Bills blue */
+}
+
+.bills-h2 {
+  color: #00338D; /* Bills blue */
+}
+
+/* Bills Page Tables */
+.bills-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed; /* Ensures the table fits within the container */
+}
+
+.bills-page th, .bills-page td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word; /* Ensures text wraps within the cells */
+}
+
+.bills-page th {
+  background-color: #00338D; /* Bills blue */
+  color: white;
+  font-size: 14px;
+}
+
+.bills-page td {
+  font-size: 12px;
+}
+
+.bills-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bills-page tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Bills Gallery Section */
+#bills-advanced-visualizations {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: calc(50% - 20px);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bills Footer */
+.bills-footer {
+  background-color: #00338D; /* Bills blue */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Hero Image */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: 400px; /* Adjusted height */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Patriots Page Tables */
+.patriots-header {
+  background-color: red; /* Patriots Red */
+  color: #002244;
+}
+
+.patriots-header nav a {
+  color: #002244; /* Blue color for Patriots links */
+}
+
+.patriots-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed; /* Ensures the table fits within the container */
+}
+
+.patriots-page th, .patriots-page td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word; /* Ensures text wraps within the cells */
+}
+
+.patriots-page th {
+  background-color: red; /* Patriots Red */
+  color: #002244;
+  font-size: 14px;
+}
+
+.patriots-page td {
+  font-size: 12px;
+}
+
+.patriots-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.patriots-page tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Patriots Gallery Section */
+#patriots-advanced-visualizations {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: calc(50% - 20px);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Patriots Footer */
+.patriots-footer {
+  background-color: red; /* Patriots Red */
+  color: #002244;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Jets Page Tables */
+.jets-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed; /* Ensures the table fits within the container */
+}
+
+.jets-header {
+  background-color: #125740; /* Jets Green */
+}
+
+.jets-h2 {
+  color: #125740; /* Jets Green */
+}
+
+.jets-page th, .jets-page td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word; /* Ensures text wraps within the cells */
+}
+
+.jets-page th {
+  background-color: #125740; /* Jets Green */
+  color: white;
+  font-size: 14px;
+}
+
+.jets-page td {
+  font-size: 12px;
+}
+
+.jets-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.jets-page tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Jets Gallery Section */
+#jets-advanced-visualizations {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: calc(50% - 20px);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Jets Footer */
+.jets-footer {
+  background-color: #125740; /* Jets Green */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

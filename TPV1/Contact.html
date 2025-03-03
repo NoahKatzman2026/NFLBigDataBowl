@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About Us</a>
+      <a href="Stats-and-History.html">History and Current Statistics</a>
+      <div class="dropdown">
+        <button class="dropbtn">Teams</button>
+        <div class="dropdown-content">
+          <a href="teams/Dolphins.html">Miami Dolphins</a>
+          <a href="teams/Bills.html">Buffalo Bills</a>
+          <a href="teams/Patriots.html">New England Patriots</a>
+          <a href="teams/Jets.html">New York Jets</a>
+        </div>
+      </div>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact-form">
+      <h2>Get in Touch!</h2>
+      <form action="submit_form.php" method="post">
+        
+        <!-- Text Fields -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone number">Phone Number:</label>
+        <input type="phone number" id="phone number" name="phone number" required>
+
+        <!-- Checkboxes -->
+        <fieldset>
+          <legend>Interested In:</legend>
+          <label for="updates">
+            <input type="checkbox" id="updates" name="interests" value="updates">
+            Updates
+          </label>
+          <label for="more stats">
+            <input type="checkbox" id="more stats" name="interests" value="more stats">
+            More Stats
+          </label>
+          <label for="offers">
+            <input type="checkbox" id="offers" name="interests" value="offers">
+            Special Offers
+          </label>
+        </fieldset>
+
+        <!-- Select Tag -->
+        <label for="team">Favorite AFC East Team:</label>
+        <select id="team" name="team">
+          <option value="dolphins">Miami Dolphins</option>
+          <option value="bills">Buffalo Bills</option>
+          <option value="patriots">New England Patriots</option>
+          <option value="jets">New York Jets</option>
+        </select>
+
+        <!-- Text Area -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="contact-footer">
+    <p>© 2025 AFC East Division. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
